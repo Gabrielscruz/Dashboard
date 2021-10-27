@@ -1,0 +1,106 @@
+
+.container_negociation{
+    display: grid;
+    box-shadow:  5px 5px 13px var(--grey), -5px -5px 13px var(--white);
+    border-radius: 5px;
+    grid-template-columns:  1fr;
+    grid-template-rows:  1fr ;
+}
+.card_negocition{
+    display: grid;
+    height: 100px;
+    color: var(--blue);
+    padding: 10px;
+    gap:6px;
+    background-color: var(--white);
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
+    grid-template-areas: 'empresa meta valor conversao'
+                         'button button button button';
+
+}
+
+.card_negocition h2{
+    font-size: 15px;
+    text-align: center;
+}
+
+.card_negocition h3{
+    font-size: 14px;
+    text-align: center;
+}
+
+.empresa{
+    display: grid;
+    grid-area: empresa;
+    align-items: center;
+    justify-content: center;
+}
+.empresa > img{
+    height: 60px;
+    width: 60px;
+ 
+}
+
+.meta{
+    display: grid;
+    background: var(--bluedark);
+    color: var(--white);
+    border-radius: 5px;
+    grid-area: meta;
+    align-items: center;
+    justify-content: center;
+}
+
+.valor{
+    display: grid;
+    grid-area: valor;
+    background: var(--greydark);
+    color: var(--white);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.conversao{
+    display: grid;
+    grid-area: conversao;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttondropdown{
+    display: grid;
+    grid-area: button;
+    border: none;
+    height:25px;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: var(--bluedark);
+    border-radius: 5px;
+}
+
+.buttondropdown > i{
+    color: var(--white)
+}
+
+.dropdown{
+    display: grid;
+    height: 50px;
+    color: var(--blue);
+    padding: 10px;
+    border-radius: 5px;
+    gap:5px;
+    background-color: var(--white);
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
+}
+

@@ -1,0 +1,110 @@
+#container_login{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:  0.8fr 1fr ;
+    grid-template-rows:  1fr;
+    grid-template-areas: 'containerLeft containerRight';
+}
+
+
+.container_left{
+    display:grid;
+    background:var(--white);
+    grid-area: containerLeft;
+    height: 100vh;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+.container_left > h1{
+    font-size: 44px;
+    COLOR: var(--blue)
+}
+
+.container_left > img {
+    width: 400px;
+    height: 400px;
+}
+
+.container_right{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right, var(--bluewhite), var(--bluedark),var(--bluedark));
+    grid-area: containerRight;
+    height: 100vh;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+}
+
+ form{
+    grid-template-columns:  1fr  ;
+    grid-template-rows:  repeat(4,1fr)    ;
+    grid-template-areas: 'Users Password Forget Submit';
+}
+
+form > input{
+    margin: 10px 0px 10px 0px;
+    width: 250px;
+}
+
+form > h1{
+    font-size: 34px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom:20px;
+}
+.users{
+    display:grid;
+    background:var(--white);
+    grid-area: Users;   
+    padding:10px;
+    border-radius:5px;
+    border: none;
+}
+
+.password{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    background:var(--white);
+    grid-area: Password;   
+    padding:10px;
+    border-radius:5px;
+    border: none;
+}
+
+
+.forget{
+    display:grid;
+    margin-bottom:  10px;
+    padding: 0 10px 0 0 ;
+    width:100%;
+    font-size: 14px;
+    color: var(--white);
+    grid-area: Forget;   
+}
+
+.submitButton{
+    display:grid;
+    margin:auto;
+    color: var(--white);
+    background:var(--green);
+    grid-area: Submit;   
+    padding: 10px;
+    border-radius:5px;
+    width: 250px;
+    border: none;
+}
+
+@media only screen and (max-width: 978px){
+    #container_login{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr ;
+        grid-template-rows:    1fr;
+        grid-template-areas: 'containerRight';
+    }
+    .container_left{
+        display: none;
+    }
+  }
